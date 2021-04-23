@@ -3,6 +3,7 @@
 
 # Compiled Folder
 build
+cmake-build-debug
 
 # Compiled Object files
 *.slo
@@ -33,3 +34,6 @@ build
 *.exe
 *.out
 *.app
+
+# IDE
+.idea

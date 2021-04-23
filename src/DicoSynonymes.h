@@ -321,7 +321,22 @@ namespace TP3
       	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	  	// de pointeurs sur des noeuds de l'arbre représentant les radicaux.
 
       // Ajoutez vos méthodes privées ici !
-
+     void _libereArbre(NoeudDicoSynonymes *arbre);
+     int _levenshtein(const std::string&, const std::string&) const;
+     int _hauteur(NoeudDicoSynonymes *arbre) const;
+     bool _debalancementAGauche(NoeudDicoSynonymes *arbre) const;
+     bool _debalancementADroite(NoeudDicoSynonymes *arbre) const;
+     bool _sousArbrePencheAGauche(NoeudDicoSynonymes *arbre) const;
+     bool _sousArbrePencheADroite(NoeudDicoSynonymes *arbre) const;
+     void _zigZigGauche(NoeudDicoSynonymes *&K2);
+     void _zigZigDroit(NoeudDicoSynonymes *&K2);
+     void _zigZagGauche(NoeudDicoSynonymes *&K3);
+     void _zigZagDroit(NoeudDicoSynonymes *&K3);
+     void _balancer(NoeudDicoSynonymes *&arbre);
+     void _ajouterRadical(NoeudDicoSynonymes *&arbre, const std::string&);
+     void _supprimerSuccDroite(NoeudDicoSynonymes *&arbre);
+     void _supprimerRadical(NoeudDicoSynonymes *&, const std::string&);
+     NoeudDicoSynonymes *_rechercheArbre(const std::string& string) const;
    };
 
 }//Fin du namespace
